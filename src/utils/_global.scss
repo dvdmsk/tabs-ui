@@ -1,0 +1,50 @@
+@import './vars';
+@import './mixins';
+@import './fonts';
+
+html {
+  font-family: 'Poppins';
+}
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, ul, li, hr {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table, tr, td, th, tbody, thead {
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

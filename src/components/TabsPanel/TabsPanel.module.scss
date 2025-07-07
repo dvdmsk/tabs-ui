@@ -1,0 +1,61 @@
+@import "@/utils/global";
+
+.TabsPanel {
+  display: flex;
+  width: 100%;
+
+  &__tabs {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__btn {
+    width: 36px;
+    transition: all .3s;
+    transform-origin: center;
+    background-color: $blue;
+    height: 100%;
+    &_active {
+      transform: rotate(180deg);
+    }
+
+  }
+
+  &__list {
+    background-color: white;
+    width: 225px;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    transition: all .3s;
+    transform: scaleY(0);
+    transform-origin: top;
+    &_active {
+      transform: scaleY(100%);
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 15px;
+    text-align: left;
+  }
+
+  &__title {
+    display: flex;
+    gap: 10px;
+  }
+}

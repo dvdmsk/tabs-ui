@@ -1,0 +1,90 @@
+@import "@/utils/global";
+
+.Tab__link {
+  display: flex;
+  height: 48px;
+  padding: 16px 20px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  white-space: nowrap;
+
+  & > div:has(.Tab__title) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .Tab__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .Tab__delete {
+    display: none;
+    position: absolute;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 2;
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    .Tab__title {
+      max-width: calc(100% - 16px - 10px);
+      text-overflow: ellipsis;
+    }
+
+    .Tab__delete {
+      display: block;
+    }
+
+    & button {
+      & path {
+        fill: $red;
+      }
+    }
+
+    & svg {
+      fill: #7F858D !important;
+    }
+    & path {
+      fill: #7F858D !important;
+    }
+  }
+
+  &::before {
+    content: "";
+    height: 16px;
+    width: 0;
+    border: 1px solid #aeb6ce33;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  &_active {
+    background-color: $light-gray;
+
+    &::before {
+      display: none;
+    }
+    border-top: 2px solid #4690E2;
+  }
+}

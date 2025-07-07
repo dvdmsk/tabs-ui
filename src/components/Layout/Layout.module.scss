@@ -1,0 +1,15 @@
+.Layout {
+  display: flex;
+  
+  &__sidebar {
+    min-width: 62px;
+    min-height: 100vh;
+  }
+
+  &__main {
+    width: 100%;
+    overflow-x: hidden;
+    border-left: 1px solid #AEB6CE33;
+    padding-top: 68px;
+  }
+}
