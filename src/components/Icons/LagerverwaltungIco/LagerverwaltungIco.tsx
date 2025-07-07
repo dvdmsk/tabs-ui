@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./LagerverwaltungIco.module.scss";
 
 const LagerverwaltungIco = () => {

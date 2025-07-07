@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import styles from "./Layout.module.scss";
 import TabsPanel from "../TabsPanel/TabsPanel";
 
@@ -6,6 +6,7 @@ import { tabs } from "@/api/tabs";
 import { Outlet } from "react-router-dom";
 import { renderTabs } from "@/app/formatters";
 import type { RenderTab } from "@/types/tab";
+import { useState } from "react";
 
 
 

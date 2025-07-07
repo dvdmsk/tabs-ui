@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./HelpIco.module.scss";
 
 const HelpIco = () => {

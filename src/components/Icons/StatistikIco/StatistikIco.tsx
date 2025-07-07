@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./StatistikIco.module.scss";
 
 const StatistikIco = () => {

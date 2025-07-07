@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./RechnIco.module.scss";
 
 const RechnIco = () => {

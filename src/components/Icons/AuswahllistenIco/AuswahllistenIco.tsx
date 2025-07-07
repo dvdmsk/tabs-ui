@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./AuswahllistenIco.module.scss";
 
 const AuswahllistenIco = () => {

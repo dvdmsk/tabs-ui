@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./VerkaufIco.module.scss";
 
 const VerkaufIco = () => {
